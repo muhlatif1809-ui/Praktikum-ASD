@@ -59,7 +59,7 @@
     3. Alasan output tampilkanInformasi() berbeda:
         Karena nilai atribut objek sudah berubah sebelum pemanggilan kedua
 
-## 2.3 Percobaan 3: Membuat Konstruktor
+## 2.3 Percobaan 3: Membuat Konstrukto
 
 ![Screenshot](image/MahasiswaMain22_Code.png)
 
