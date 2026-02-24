@@ -32,7 +32,9 @@
         updateIpk()
         nilaiKinerja()
     4. Modifikasi kode Program:
+
 ![Screenshot](image/modifikasi.png)
+
     5. Cara kerja method nilaiKinerja():
         Mengevaluasi kinerja mahasiswa berdasarkan nilai IPK
         Menggunakan rentang IPK sebagai kriteria
@@ -48,7 +50,9 @@
 
 ## 2.2.3 Pertanyaan
     1. Baris instansiasi object & nama object:
+
 ![Screenshot](image/mhs1.png)
+
     2. Cara mengakses atribut & method objek:
         Menggunakan namaObjek.atribut
         Menggunakan namaObjek.method()
@@ -57,7 +61,7 @@
 
 ## 2.3 Percobaan 3: Membuat Konstruktor
 
-c
+
 
 ## 2.3.2 Verifikasi Hasil Percobaan
 
@@ -78,8 +82,10 @@ c
         Contoh: Mahasiswa mhsLatif = new Mahasiswa(...);
 ## 2.4 Latihan Praktikum
 
+## Latihan 1
 ![Screenshot](image/MataKuliahMain22.png)
 
+## Latihan 2
 ![Screenshot](image/DosenMain22.png)
 
 
