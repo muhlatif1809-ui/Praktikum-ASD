@@ -101,7 +101,7 @@ Hasil Run :
     Masukkan Keuntungan Ke- 1: 10
     Masukkan Keuntungan Ke- 2: 20
     Masukkan Keuntungan Ke- 3: 30 f
-    Masukkan Keuntungan Ke- 4: 40 
+    Masukkan Keuntungan Ke- 4: 40 f
     Masukkan Keuntungan Ke- 5: 50
     Total Keuntungan Menggunakan Bruteforce: 150.0
     Total Keuntungan Menggunkan Divide And Conquer: 150.0
