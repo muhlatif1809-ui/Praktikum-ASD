@@ -19,7 +19,7 @@ Nilai Faktorial 5 Menggunakan DC: 120
 ## 5.2.1 Pertanyaan Percobaan 1
 
 1. Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan perbedaan bagian kode pada penggunaan if dan else! 
-    - if digunakan untuk menentukan kondisi agar rekursi berhenti, sedangkan else digunakan untuk   melakukan proses pembagian masalah (divide) dan memanggil fungsi kembali
+    - If digunakan untuk menentukan kondisi agar rekursi berhenti, sedangkan else digunakan untuk   melakukan proses pembagian masalah (divide) dan memanggil fungsi kembali
 
 2. Apakah memungkinkan perulangan pada method faktorialBF() diubah selain menggunakan for? Buktikan! 
 
@@ -37,10 +37,10 @@ Nilai Faktorial 5 Menggunakan DC: 120
     Nilai Faktorial 5Menggunakan DC: 120
 ```
 3. Jelaskan perbedaan antara fakto *= i; dan int fakto = n * faktorialDC(n-1); !
-    - fakto *= i; menghitung faktorial dengan menggunakan perulangan, operator *= berfungsi untuk   mengalikan nilai variabel dengan nilai lain lalu menyimpannya kembali ke variabel tsb. sedangkan fakto = n * faktorialDC(n-1); menghitung faktorial dengan rekursi (divide and conquer), nilai n dikalikan dengan hasil dari pemanggilan fungsi faktorialDC (n-1)
+    - Fakto *= i; menghitung faktorial dengan menggunakan perulangan, operator *= berfungsi untuk   mengalikan nilai variabel dengan nilai lain lalu menyimpannya kembali ke variabel tsb. sedangkan fakto = n * faktorialDC(n-1); menghitung faktorial dengan rekursi (divide and conquer), nilai n dikalikan dengan hasil dari pemanggilan fungsi faktorialDC (n-1)
 
 4. Buat Kesimpulan tentang perbedaan cara kerja method faktorialBF() dan faktorialDC()!
-    - method faktorialBF () menghitung faktorial dengan perkalian berulang menggunakan perulangan (loop) dari 1 sampai n. sedangkan faktorialDC() menghitung faktorial dengan memanggil fungsi secara rekursif dari n hingga mencapai kondisi dasar, lalu hasilnya dikalikan kembali sampai ke nilai awal
+    - Method faktorialBF () menghitung faktorial dengan perkalian berulang menggunakan perulangan (loop) dari 1 sampai n. sedangkan faktorialDC() menghitung faktorial dengan memanggil fungsi secara rekursif dari n hingga mencapai kondisi dasar, lalu hasilnya dikalikan kembali sampai ke nilai awal
 
 ## 5.3 Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide and Conquer
 
@@ -67,8 +67,8 @@ HASIL PANGKAT DIVIDE AND CONQUER:
 ## 5.3.1 Pertanyaan
 
 1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu pangkatBF() dan pangkatDC()!
-    - pangkatBF() menghitung perpangkatan dengan cara perkalian berulang menggunakan perulangan (loop) dari 1 sampai nilai pangkat. setiap iterasi mengalikan nilai basis dengan hasil sebelumnya sampai pangkat tercapai.
-    - pangkatDC() menghitung perpangkatan dengan cara membagi masalah menjadi lebih kecil menggunakan rekursi. nilai pangkat dibagi menjadi setengah (n/2), kemudian hasilnya dikalikan kembali hingga mendapatkan hasil akhir.
+    - PangkatBF() menghitung perpangkatan dengan cara perkalian berulang menggunakan perulangan (loop) dari 1 sampai nilai pangkat. setiap iterasi mengalikan nilai basis dengan hasil sebelumnya sampai pangkat tercapai.
+    - PangkatDC() menghitung perpangkatan dengan cara membagi masalah menjadi lebih kecil menggunakan rekursi. nilai pangkat dibagi menjadi setengah (n/2), kemudian hasilnya dikalikan kembali hingga mendapatkan hasil akhir.
 2. Apakah tahap combine sudah termasuk dalam kode tersebut?Tunjukkan!
     - Sudah 
 ``` java
@@ -90,7 +90,7 @@ HASIL PANGKAT DIVIDE AND CONQUER:
     System.out.println(p.nilai+ "^"+p.pangkat+": "+p.pangkatBF());
 ```
 4. Tarik tentang cara kerja method pangkatBF() dan pangkatDC()!
-    - method pangkatBF() bekerja dengan cara mengalikan nilai basis secara berulang menggunakan perulangan sampai jumlah perkalian sesuai dengan nilai pangkat. sedangkan pangkatDC() bekerja dengan cara membagi perhitungan pangkat menjadi bagian yang lebih kecil menggunakan rekursi, kemudian menggabungkan kembali hasilnya sampai mendapatkan hasil akhir.
+    - Method pangkatBF() bekerja dengan cara mengalikan nilai basis secara berulang menggunakan perulangan sampai jumlah perkalian sesuai dengan nilai pangkat. sedangkan pangkatDC() bekerja dengan cara membagi perhitungan pangkat menjadi bagian yang lebih kecil menggunakan rekursi, kemudian menggabungkan kembali hasilnya sampai mendapatkan hasil akhir.
 
 ## 5.4 Menghitung Sum Array dengan Algoritma Brute Force dan Divide and Conque
 
@@ -100,11 +100,31 @@ Hasil Run :
     Masukkan Jumlah Elemen: 5
     Masukkan Keuntungan Ke- 1: 10
     Masukkan Keuntungan Ke- 2: 20
-    Masukkan Keuntungan Ke- 3: 30 f
-    Masukkan Keuntungan Ke- 4: 40 f
+    Masukkan Keuntungan Ke- 3: 30 
+    Masukkan Keuntungan Ke- 4: 40 
     Masukkan Keuntungan Ke- 5: 50
     Total Keuntungan Menggunakan Bruteforce: 150.0
     Total Keuntungan Menggunkan Divide And Conquer: 150.0
 ```
+## 5.4.1 Pertanyaan
 
+1. Kenapa dibutuhkan variable mid pada method TotalDC()?
+
+    - Variabel mid digunakan untuk menentukan titik tengah data agar proses dapat dibagi menjadi dua bagian dalam algoritma Divide and Conquer
+
+2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()?
+
+    - Statement tersebut digunakan untuk menghitung total bagian kiri dan kanan array secara rekursif sebelum digabungkan menjadi total akhir.
+
+3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini?
+
+    - Diperlukan untuk menggabungkan hasil perhitungan dari dua bagian array yang telah diproses secara rekursif
+
+4. Apakah base case dari totalDC()?
+
+    - Base case dari totalDC() adalah ketika l == r, karena pada kondisi ini array hanya memiliki satu elemen sehingga tidak perlu dibagi lagi.
+
+5. Tarik Kesimpulan tentang cara kerja totalDC()
+
+    - Method totalDC() bekerja dengan cara membagi array menjadi dua bagian menggunakan titik tengah (mid), kemudian menghitung total masing-masing bagian secara rekursif hingga mencapai base case. setelah itu, hasil dari bagian kiri (lsum) dan kana (rsum) digabungkan dengan penjumlahan untuk mendapatkan total keseluruhan.
 
