@@ -1,0 +1,15 @@
+package Minggu5;
+
+import java.util.Scanner;
+
+public class MainFaktorial {
+    public static void main(String[] args) {
+    Scanner latif = new Scanner(System.in);
+    System.out.print("Masukkan Nilai: ");
+    int nilai = latif.nextInt();
+
+    Faktorial fk = new Faktorial();
+    System.out.println("Nilai Faktorial "+nilai+"Menggunakan BF: "+fk.faktorialBF(nilai));
+    System.out.println("Nilai Faktorial "+nilai+"Menggunakan DC: "+fk.faktorialDC(nilai));
+    }
+}
