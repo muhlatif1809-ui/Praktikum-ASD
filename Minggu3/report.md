@@ -210,3 +210,164 @@ public class Mahasiswa22 {
 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 
     - Karena array myArrayOfMahasiswa hanya dibuat sebagai tempat penyimpanan objek, tetapi objek Mahasiswa pada indeks array belum diinisialisasi, sehingga menyebabkan error
+
+## Percobaan 3.4.1 & Hasil Percobaan
+
+``` java
+package Minggu3;
+
+import java.util.Scanner;
+
+public class MataKuliahDemo22 {
+    public static void main(String[] args) {
+        Scanner latif22 = new Scanner(System.in);
+        Matakuliah22[] arrayOfMatakuliah22 = new Matakuliah22[3];
+        String kode, nama, dummy;
+        int sks, JumlahJam;
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Masukkan Data Mata Kuliah Ke- " + (i + 1));
+            System.out.print("Kode          : ");
+            kode = latif22.nextLine();
+            System.out.print("Nama          : ");
+            nama = latif22.nextLine();
+            System.out.print("SKS           : ");
+            dummy = latif22.nextLine();
+            sks = Integer.parseInt(dummy);
+            System.out.print("Jumlah Jam    : ");
+            dummy = latif22.nextLine();
+            JumlahJam = Integer.parseInt(dummy);
+            System.out.println("----------------------------------");
+
+
+        }
+    }
+}
+
+Masukkan Data Mata Kuliah Ke- 1
+Kode          : 1234
+Nama          : Algortima & Struktur Data 
+SKS           : 2
+Jumlah Jam    : 6
+----------------------------------
+Masukkan Data Mata Kuliah Ke- 2
+Kode          : 1234
+Nama          : Sistem Basis Data
+SKS           : 2
+Jumlah Jam    : 4
+----------------------------------
+Masukkan Data Mata Kuliah Ke- 3
+Kode          : 1234
+Nama          : Dasar Pemograman
+SKS           : 2
+Jumlah Jam    : 4
+----------------------------------
+Data Matakuliah Ke - 1
+Kode            : 1234
+Nama            : Algortima & Struktur Data 
+Sks             : 2
+Jumlah Jam      : 6
+Data Matakuliah Ke - 2
+Kode            : 1234
+Nama            : Sistem Basis Data
+Sks             : 2
+Jumlah Jam      : 4
+Data Matakuliah Ke - 3
+Kode            : 1234
+Nama            : Dasar Pemograman
+Sks             : 2
+Jumlah Jam      : 4
+
+```
+
+## 3.4.3 Pertanyaan 
+
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
+
+    - bisa, contohnya construktor mahasiswa yang mempunyai construktor nim, nama, dan kelas
+
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+
+    - 
+``` java 
+    public Matakuliah22(String kode, String nama, int sks, int JumlahJam){
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.JumlahJam = JumlahJam;
+    }
+```
+
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+
+    - 
+``` java
+    void cetakInfo(){
+        System.out.println("Kode        : "+ kode);
+        System.out.println("Nama        : "+ nama);
+        System.out.println("SKS         : "+ sks);
+        System.out.println("Jumlah Jam  : "+ JumlahJam);
+    }
+```
+
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+
+    - 
+``` java
+    System.out.print("Masukkan jumlah data yang ingin dimasukkan : ");
+    int jmlData = latif.nextInt();
+    latif.nextLine();
+    Matakuliah03[] arrayOfMataKuliah = new Matakuliah22 [jmlData]
+```
+
+## Tugas 1 : 
+
+``` java
+Masukkan Jumlah Dosen: 2
+
+Data Dosen ke- 1
+Kode  : 98765
+Nama  : Stepen
+Jenis Kelamin (true = Laki-laki, false = Perempuan): true
+Usia  : 20
+
+Data Dosen ke- 2
+Kode  : 56789
+Nama  : Siti
+Jenis Kelamin (true = Laki-laki, false = Perempuan): false
+Usia  : 19
+
+===== Data Semua Dosen =====    
+Kode  : 98765
+Nama  : Stepen
+JK    : Laki-laki
+Usia  : 20
+---------------------------     
+Kode  : 56789
+Nama  : Siti
+JK    : Perempuan
+Usia  : 19
+---------------------------
+```
+
+## Tugas 2
+
+``` java
+===== Jumlah Dosen Per Jenis Kelamin =====
+Laki-laki : 1
+Perempuan : 1
+
+===== Rata-rata Usia Dosen =====
+Nama  : Stepen
+JK    : Laki-laki
+Usia  : 20
+---------------------------
+
+===== Dosen Paling Muda =====
+Dosen Paling Muda:
+Kode  : 56789
+Nama  : Siti
+JK    : Perempuan
+Usia  : 19
+---------------------------
+```

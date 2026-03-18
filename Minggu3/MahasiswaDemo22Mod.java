@@ -9,6 +9,8 @@ public class MahasiswaDemo22Mod {
         String dummy;
 
         for (int i = 0; i < 3; i++) {
+            System.out.print("Data Mahasiswa Ke - "+ (i + 1));
+            arrayOfMahasiswa22[i].cetakInfo();
             arrayOfMahasiswa22[i] = new Mahasiswa22();
 
             System.out.println("Masukkan Data Mahasiswa Ke- "+ (i + 1));

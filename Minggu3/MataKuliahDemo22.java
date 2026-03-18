@@ -10,7 +10,7 @@ public class MataKuliahDemo22 {
         int sks, JumlahJam;
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Masukkan Data Mata Kliah Ke- " + (i + 1));
+            System.out.println("Masukkan Data Mata Kuliah Ke- " + (i + 1));
             System.out.print("Kode          : ");
             kode = latif22.nextLine();
             System.out.print("Nama          : ");
@@ -23,7 +23,15 @@ public class MataKuliahDemo22 {
             JumlahJam = Integer.parseInt(dummy);
             System.out.println("----------------------------------");
 
+            arrayOfMatakuliah22[i] = new Matakuliah22(kode, nama, sks, JumlahJam);
+        }
 
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Matakuliah Ke - "+ (i + 1));
+            System.out.println("Kode            : "+ arrayOfMatakuliah22[i].kode);
+            System.out.println("Nama            : "+arrayOfMatakuliah22[i].nama);
+            System.out.println("Sks             : "+arrayOfMatakuliah22[i].sks);
+            System.out.println("Jumlah Jam      : "+ arrayOfMatakuliah22[i].JumlahJam);
         }
     }
 }
