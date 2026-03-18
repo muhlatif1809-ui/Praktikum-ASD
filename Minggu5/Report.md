@@ -128,3 +128,70 @@ Hasil Run :
 
     - Method totalDC() bekerja dengan cara membagi array menjadi dua bagian menggunakan titik tengah (mid), kemudian menghitung total masing-masing bagian secara rekursif hingga mencapai base case. setelah itu, hasil dari bagian kiri (lsum) dan kana (rsum) digabungkan dengan penjumlahan untuk mendapatkan total keseluruhan.
 
+## 5.5 Tugas
+
+Hasil Run:
+``` java
+Masukkan Jumlah Mahasiswa: 8
+
+Data Mahasiswa Ke- 1
+Nama          : ahmad
+NIM           : 220101001
+Tahun Masuk   : 2022
+Nilai UTS     : 78
+Nilai UAS     : 82
+
+Data Mahasiswa Ke- 2
+Nama          : budi
+NIM           : 220101002
+Tahun Masuk   : 2022
+Nilai UTS     : 85
+Nilai UAS     : 88
+
+Data Mahasiswa Ke- 3
+Nama          : cindy
+NIM           : 220101003
+Tahun Masuk   : 2021
+Nilai UTS     : 90
+Nilai UAS     : 87
+
+Data Mahasiswa Ke- 4
+Nama          : dian
+NIM           : 220101004
+Tahun Masuk   : 2021
+Nilai UTS     : 76
+Nilai UAS     : 79
+
+Data Mahasiswa Ke- 5
+Nama          : eko
+NIM           : 220101005
+Tahun Masuk   : 2023
+Nilai UTS     : 92
+Nilai UAS     : 95
+
+Data Mahasiswa Ke- 6
+Nama          : fajar
+NIM           : 220101006
+Tahun Masuk   : 2020
+Nilai UTS     : 88
+Nilai UAS     : 85
+
+Data Mahasiswa Ke- 7
+Nama          : gina
+NIM           : 220101007
+Tahun Masuk   : 2023
+Nilai UTS     : 80
+Nilai UAS     : 83
+
+Data Mahasiswa Ke- 8
+Nama          : hadi 
+NIM           : 220101008
+Tahun Masuk   : 2020
+Nilai UTS     : 82
+Nilai UAS     : 84
+
+=== HASIL PERHITUNGAN ===
+UTS Tertinggi : 85.0
+UTS Terendah : 76.0
+Rata-rata UAS : 85.375
+```
