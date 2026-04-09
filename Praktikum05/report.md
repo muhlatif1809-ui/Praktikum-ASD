@@ -76,8 +76,9 @@ PS C:\Users\ReviOS\Documents\Prakdas2026>
 
 2. Tunjukkan kode pencarian nilai minimum pada selection sort!
 
-    - int min = i;
-for (int j = i + 1; j < jumData; j++) {
+    - 
+    int min = i;
+    for (int j = i + 1; j < jumData; j++) {
     if (data[j] < data[min]) {
         min = j;
     }
@@ -87,17 +88,16 @@ for (int j = i + 1; j < jumData; j++) {
     
     - Kondisi tersebut berarti:
 
-j > 0 → memastikan indeks tidak keluar dari array
-data[j-1] > temp → membandingkan apakah data sebelumnya lebih besar
+    j > 0 → memastikan indeks tidak keluar dari array
+    data[j-1] > temp → membandingkan apakah data sebelumnya lebih besar
 
-Jika kondisi terpenuhi, maka data akan digeser ke kanan.
+    Jika kondisi terpenuhi, maka data akan digeser ke kanan.
 
 4. Tujuan perintah berikut pada insertion sort!
     
     - Digunakan untuk menempatkan nilai temp ke posisi yang benar setelah proses pergeseran selesai.
- 
 
-## 5.3.2 Langkah-langkah Praktikum 2
+## 5.3 Praktikum 2- (Sorting Menggunakan Array of Object) 
 ``` java
 package Praktikum05;
 
@@ -179,7 +179,34 @@ IPK: 3.1
 -----------------
 PS C:\Users\ReviOS\Documents\Prakdas2026> 
 ```
+## 5.3.4 Pertanyaan
 
+1. Perhatikan perulangan di dalam bubbleSort() di bawah ini:
+    - A. Mengapa syarat dari perulangan i adalah i<listMhs length-1 ?
+    Karena proses pengurutan cukup dilakukan sampai elemen kedua terakhir, sehingga elemen terakhir otomatis sudah berada pada posisi yang benar.
+    - B. Mengapa syarat perulangan j adalah j < listMhs.length - i - 1 ?
+    Karena setiap iterasi, elemen terbesar sudah berada di posisi akhir, sehingga tidak perlu dibandingkan kembali.
+    - C. Jika banyak data dalam listMhs adalah 50, berapa kali perulangan i berlangsung?
+    Perulangan i berlangsung sebanyak 49 kali (n - 1), sehingga terdapat 49 tahap bubble sort.
+2. Modifikasi program agar data mahasiswa bersifat dinamis (input dari keyboard)!
+    - 
+``` java 
+    MahasiswaBerprestasi22 list = new MahasiswaBerprestasi22();
+
+    for (int i = 0; i < 5; i++) {
+        System.out.print("NIM   : ");
+        String nim = sc.nextLine();
+        System.out.print("Nama  : ");
+        String nama = sc.nextLine();
+        System.out.print("Kelas : ");
+        String kelas = sc.nextLine();
+        System.out.print("IPK   : ");
+        double ipk = sc.nextDouble();
+        latif22.nextLine();
+
+        list.tambah(new Mahasiswa22(nim, nama, kelas, ipk));
+}
+```
 ## 5.3.5 Mengurutkan Data Mahasiswa Berdasarkan IPK (Selection Sort)
 
 ``` java
@@ -294,6 +321,14 @@ IPK: 3.9
 -----------------
 PS C:\Users\ReviOS\Documents\Prakdas2026> 
 ```
+
+## 5.3.7 Pertanyaan
+
+1. Untuk apakah proses tersebut, jelaskan!
+    - Baris kode tersebut digunakan untuk menyimpan indeks dari nilai terkecil (minimum) pada setiap iterasi.
+
+    Awalnya, indeks minimum dianggap berada pada posisi i.
+    Kemudian, program akan membandingkan dengan elemen berikutnya untuk mencari nilai yang lebih kecil. Jika ditemukan nilai yang lebih kecil, maka indeks min akan diperbarui.
 
 ## 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
 
@@ -440,6 +475,15 @@ IPK: 3.9
 -----------------
 PS C:\Users\ReviOS\Documents\Prakdas2026> 
 ```
+1. Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending
+``` java
+while (j > 0 && listMhs[j - 1].ipk < temp.ipk) {
+    listMhs[j] = listMhs[j - 1];
+    j--;
+}
+listMhs[j] = temp;
+```
+
 
 ## 5.5 Latihan Praktikum
 ``` java
