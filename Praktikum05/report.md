@@ -68,6 +68,23 @@ Data Sudah Diurutkan Dengan SELECTION SORT (ASC)
 PS C:\Users\ReviOS\Documents\Prakdas2026> 
 ```
 
+## 5.2.5 Pertanyaan!
+
+1. Jelaskan fungsi kode program berikut
+    - Digunakan untuk menempatkan nilai temp ke posisi yang benar setelah proses pergeseran selesai.
+
+2. Tunjukkan kode pencarian nilai minimum pada selection sort!
+    ``` java
+    int min = i;
+for (int j = i + 1; j < jumData; j++) {
+    if (data[j] < data[min]) {
+        min = j;
+    }
+}
+```
+
+
+
 ## 5.3.2 Langkah-langkah Praktikum 2
 ``` java
 package Praktikum05;
