@@ -71,19 +71,31 @@ PS C:\Users\ReviOS\Documents\Prakdas2026>
 ## 5.2.5 Pertanyaan!
 
 1. Jelaskan fungsi kode program berikut
+  
     - Digunakan untuk menempatkan nilai temp ke posisi yang benar setelah proses pergeseran selesai.
 
 2. Tunjukkan kode pencarian nilai minimum pada selection sort!
-    ``` java
-    int min = i;
+
+    - int min = i;
 for (int j = i + 1; j < jumData; j++) {
     if (data[j] < data[min]) {
         min = j;
     }
 }
-3. kj
 
+3. Pada insertion sort, jelaskan kondisi perulangan!
+    
+    - Kondisi tersebut berarti:
 
+j > 0 → memastikan indeks tidak keluar dari array
+data[j-1] > temp → membandingkan apakah data sebelumnya lebih besar
+
+Jika kondisi terpenuhi, maka data akan digeser ke kanan.
+
+4. Tujuan perintah berikut pada insertion sort!
+    
+    - Digunakan untuk menempatkan nilai temp ke posisi yang benar setelah proses pergeseran selesai.
+ 
 
 ## 5.3.2 Langkah-langkah Praktikum 2
 ``` java
