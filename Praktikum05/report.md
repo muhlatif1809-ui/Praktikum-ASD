@@ -3,8 +3,7 @@
 | NIM |  254107020235|
 | Nama |  Muhammad Latif Sabilis Sudur |
 | Kelas | TI - 1F |
-| Repository | [link] https://github.com/muhlatif1809-ui/Praktikum-ASD.git
-
+| Repository | [link] https://github.com/muhlatif1809-ui/Praktikum-ASD/tree/main/Praktikum05
 # Jobsheet 5 SORTING (BUBBLE, SELECTION, DAN INSERTION SORT)
 
 ## 5.2 Praktikum 1 - Mengimplementasikan Sorting menggunakan objec
