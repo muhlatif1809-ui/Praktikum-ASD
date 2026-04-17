@@ -6,7 +6,8 @@ public class Peminjaman22CM {
     Buku22CM buku;     
     int lamaPinjam;
     int denda;
-
+    int tahun;
+    int pinjam;
     Peminjaman22CM(Mahasiswa22CM mhs, Buku22CM buku, int lamaPinjam) {
         this.mhs = mhs;
         this.buku = buku;
@@ -17,11 +18,17 @@ public class Peminjaman22CM {
     void hitungDenda() {
         int batas = 5;
         int telat = lamaPinjam - batas;
-
+     
+        // Hitung Denda Dibawah 2020
         if (telat > 0) {
             denda = telat * 2000;
         } else {
-            denda = 0;
+            if (telat >= 2020) {
+                denda = telat * 2;
+            } else {
+                denda = 0;
+            }
+            
         }
     }
 

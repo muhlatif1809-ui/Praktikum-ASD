@@ -9,6 +9,7 @@ public class Main22 {
 
     public static void main(String[] args) {
         Scanner latif22 = new Scanner(System.in);
+        int input;
 
         Mahasiswa22CM m1 = new Mahasiswa22CM("22001", "Andi", "Teknik Informatika");
         Mahasiswa22CM m2 = new Mahasiswa22CM("22002", "Budi", "Teknik Informatika");
@@ -36,6 +37,7 @@ public class Main22 {
             System.out.println("3. Hitung Denda");
             System.out.println("4. Urutkan Denda (Insertion Sort)");
             System.out.println("5. Cari berdasarkan NIM (Binary Search)");
+            System.out.println("6. Input Terbaru");
             System.out.println("0. Keluar");
             System.out.print("Pilih: ");
             pilih = latif22.nextInt();
@@ -74,8 +76,20 @@ public class Main22 {
                     insertionSortNIM();
                     System.out.print("Masukkan NIM: ");
                     String cari = latif22.next();
+                    // System.out.print("Lama Pinjam Terbaru : ");
+                    // input = latif22.nextInt();
                     binarySearch(cari);
                     break;
+                // Input Pinjaman Terbaru
+                case 6:
+                    insertionSortNIM();
+                    System.out.print("Masukkan Pinjaman Terbaru: ");
+                    input = latif22.nextInt();
+                    System.out.print("Masukkan NIM: ");
+                    cari = latif22.next();
+                    binarySearch(cari);
+                    break;
+
             }
         } while (pilih != 0);
     }
