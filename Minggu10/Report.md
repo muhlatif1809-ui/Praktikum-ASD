@@ -285,7 +285,7 @@ Pilih Menu: 0
 Terima kasih. 
 ```
 
-- Gambar Diagram class antrian
-![Screenshoot](images/Diagram.png)
+## Gambar Diagram class antrian
+![Screenshoot](Images/Diagram.png)
 
-![Screenshoot](images/Diagram2.png)
+![Screenshoot](Images/Diagram2.png)
