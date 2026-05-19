@@ -286,6 +286,6 @@ Terima kasih.
 ```
 
 - Gambar Diagram class antrian
-![alt text](<Screenshot 2026-05-19 222156.png>)
+![Screenshoot](images/Diagram.png)
 
-![alt text](<Screenshot 2026-05-19 222317.png>)
+![Screenshoot](images/Diagram2.png)
